@@ -14,4 +14,8 @@ class Place
     @@places.push(self)
   end
 
+  def self.clear
+    @@places = []
+  end
+
 end

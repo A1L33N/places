@@ -29,5 +29,13 @@ describe Place do
     end
   end
 
+  describe ".clear" do
+   it "empties all of the saved places" do
+     @test_place.save
+     Place.clear
+     expect(Place.all).to eq []
+   end
+  end
+
 
 end
