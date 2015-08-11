@@ -18,6 +18,10 @@ describe Place do
   end
 
   describe ".all" do
+    it "adds a place and description to a list of places" do
+      expect(Place.all).to eq []
+    end
+
   end
 
 
