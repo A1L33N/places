@@ -18,10 +18,15 @@ describe Place do
   end
 
   describe ".all" do
-    it "adds a place and description to a list of places" do
+    it "it is empty at first" do
       expect(Place.all).to eq []
     end
+  end
 
+  describe "#save" do
+    it "saves a place to an array" do
+      expect(@test_place.save).to eq [@test_place]
+    end
   end
 
 
