@@ -3,6 +3,7 @@ require './lib/places'
 
 describe Place do
   before do
+    Place.clear
     @test_place = Place.new('Detroit', "My home town")
   end
   describe '#name' do
